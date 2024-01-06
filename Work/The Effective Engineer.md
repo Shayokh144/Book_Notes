@@ -165,28 +165,66 @@ Building feedback loops for decisions ensures ongoing validation. Incorporating 
 Prototyping and Minimum Viable Products (MVPs) allow rapid validation. These scaled-down versions facilitate quick feedback, minimizing resource investments while maximizing learning opportunities.
 
 
+## Chapter 7: Improve Your Project Estimation Skills
+
+### Why
+
+Project estimation is one of the hardest skills that an effective engineer needs to learn. But it’s crucial to master: businesses need accurate estimates to make long-term plans for their products. They need to know when resources might free up to work on upcoming features or when they can promise feature requests to customers. And even when we don’t have pressure to ship against a deadline, how long we think a project will take affects our decisions of what to work on.
+
+
+### How to Improve
+
+#### Decompose the project into granular tasks
+When estimating a large pro- ject, decompose it into small tasks and estimate each one of them. If a task will take more than two days, decompose it further. The more granular a task’s breakdown, the less likely that an uncon- sidered subtask will sneak up later.
+
+
+#### Base your estimates on task duration, not desired duration
+Estimate based on how long tasks will take, not on how long you or someone else wants them to take. It's better to be realistic and considering past experiences or data to determine a more accurate estimation rather than an optimistic or wishful timeframe.
+
+
+#### Estimates are likelihoods, not best-case views
+Because we operate with imperfect information, we instead should consider our esti- mates as probability distributions over a range of outcomes, spanning the best-case and worst-case scenarios. Instead of telling a product manager or other stakeholder that we’ll finish a feature in 6 weeks, we might instead tell them, “There’s a 50% likelihood that we can deliver the feature 4 weeks from now, and a 90% chance that we can deliver it within 8 weeks.”
+
+
+#### Task doer makes the estimate
+People have different skill sets and levels of familiarity with the codebase. Therefore, what takes you one hour to complete might take someone else three hours. As much as possible, have the person who will work on a task do the actual estimation. Divvying up the estimation work also enables more team members to practice estimation skills and builds team-wide visibility into how different members over- or underestimate their work (most people underestimate).
+
+
+#### Beware of anchoring bias
+Avoid committing to an initial number before ac- tually outlining the tasks involved, as a low estimate can set an initial anchor that makes it hard to establish a more accurate estimate later on.
+
+
+#### Use multiple approaches to estimate the same task
+This can help increase confidence that your approach is sound. For example, suppose you’re building a new feature. You can 1) decompose the project into granular tasks, estimate each individual task, and create a bottom-up estimate; 2) gather historical data on how long it took to build something similar; and 3) count the number of subsystems you have to build and estimate the average time required for each one.
+
+
+#### Beware the mythical man-month
+In engineering, project durations typ- ically get measured in terms of person-hours, person-days, person-weeks, or person-months i.e. the number of hours, days, weeks, or months of work that it takes an average engineer to complete a project. Unfortunately, this type of accounting leads to the myth that people and time are in- terchangeable.
+
+
+#### Validate estimates against historical data
+Data-driven estimates backed by historical evidence are promoted, suggesting the adjustment of overall estimates based on past underestimations or growth patterns. For example, if historical underestimations have been at 20%, scaling up estimates by 25% can provide more accurate projections. Similarly, increased growth rates in users or revenue allow for forecasting future performance based on these observed patterns.
+
+
+#### Use timeboxing to constrain tasks that can grow in scope
+Implement timeboxing to limit the scope of tasks prone to expansion. While researching for new features, the pursuit of perfection in choices like database technologies or JavaScript libraries can lead to diminishing returns and schedule complications. The approach suggests allocating a fixed time, a time box, for openended activities. Instead of estimating a three-day duration for research, commit to making the best decision possible within the available data after three days.
+
+
+#### Allow others to challenge estimates 
+Because estimation is hard, we have a tendency to cut corners or eyeball numbers. By reviewing estimates at a team meeting, we can increase accuracy and buy-in at the cost of some additional overhead. Others may have knowledge or experience that can help highlight poor or incomplete estimates. Iteratively revising our estimates can lead us to better project outcomes. Estimates contain more uncertainty at the beginning of a project, but the variance decreases as we flesh out the details. Use incoming data to revise existing estimates and, in turn, the project plan; otherwise, it will remain based on stale information.
 
 
 
+#### Budget for the Unknown
+We can better deal with unknowns by acknowledging that the longer a project is, the more likely that an unexpected problem will arise. The first step in dealing with this is to separate estimated work time from calendar time.
 
 
+#### Define Specific Project Goals and Measurable Milestones
+Define specific goals for a project based on the problem you’re working to solve, and then use milestones to measure progress on those goals. The simple exercise of setting a project goal produces two concrete benefits. First, a well-defined goal provides an important filter for separating the must haves from the nice-to-haves in the task list. The second benefit of defining specific project goals is that it builds clarity and alignment across key stakeholders. If we’ve fallen behind, a milestone provides an opportunity to revise our plan, ei- ther by extending the deadline or by cutting tasks.
+
+#### Reduce Risk Early
+Tackling the riskiest areas first helps us identify any estimation errors as- sociated with them. Our initial project estimates will exhibit high variance because we’re oper- ating under uncertainty and imperfect information. As we gain more informa- tion and revise our estimates, the variance narrows. By shifting the work that can take highly variable amounts of time to earlier in the process, we reduce risk and give ourselves more time and information to make effective project plans.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#### Know the limits of overtime
+Many teams burn out because they start sprinting before they’re even close to the finish line. Don’t sprint just because you’re behind and don’t know what else to do. Work overtime only if you’re confident that it will enable you to finish on time.
