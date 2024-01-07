@@ -26,7 +26,7 @@ The tech industry evolves quickly, introducing new tools, frameworks, and method
 - Invest time regularly for learning or doing side project. Can follow 20% rule which states we should dedicate our 20% work time for learning.
 - Learning compounds like interest. The more you learn, the easier it is to apply prior insights and lessons to learn new things.
 - Capitalize on opportunities at work to improve your technical skills. 
-- Learn from your best co-workers. Study their code and their code reviews. 
+- Learn from your best coworkers. Study their code and their code reviews. 
 - Dive into any available educational material provided by your company, and look into classes or books that your workplace might be willing to subsidize
 
 ## Chapter 3: Prioritise regularly
@@ -48,7 +48,7 @@ Some strategies used to prioritize effectively:
 - **Limit the amount of work in progress.**
 	- When we fragment our attention too much, however, we end up reducing our overall productivity and hindering our ability to make substantive progress on any single task. Constantly switching contexts hinders deep engagement in any one activity and reduces our overall chances of success. Therefore, we need to be deliberate about limiting our work in progress. This involves prioritizing and sequencing different projects so that we can maintain a strong momentum.
 - **Fight procrastination with If-Then plans.**
-	- Many people do not have sufficient motivation to summon the activation energy required to start a difficult task. The 'if-then' plan, in which we identify ahead of time a situation where we plan to do a certain task, is essential. Subconscious follow-up is important because procrastination primarily stems from a reluctance to expend the initial activation energy on a task. This reluctance leads us to rationalize why it might be better to do something easier or more enjoyable, even if it has lower leverage. When we're in the moment, the short-term value that we get from procrastinating can often dominate our decision-making process. However, when we make 'if-then' plans and decide what to do ahead of time, we're more likely to consider the long-term benefits associated with a task.
+	- Many people do not have sufficient motivation to summon the activation energy required to start a difficult task. The 'if-then' plan, in which we identify ahead of time a situation where we plan to do a certain task, is essential. Subconscious follow-up is important because procrastination primarily stems from a reluctance to expend the initial activation energy on a task. This reluctance leads us to rationalize why it might be better to do something easier or more enjoyable, even if it has lower leverage. When we're in the moment, the short-term value that we get from procrastinating can often dominate our decisionmaking process. However, when we make 'if-then' plans and decide what to do ahead of time, we're more likely to consider the long-term benefits associated with a task.
 
 - **Make a routine of prioritization**
 	- As time passes, our current projects may no longer represent the best use of our time, so we need to make a habit of revisiting those priorities.
@@ -65,7 +65,7 @@ Some strategies used to prioritize effectively:
 
 ### Invest in Time-Saving Tools
 
-- If we have to do something manually more than twice, then it is better to write a tool for the third time. There are only a finite num- ber of work hours in the day, so increasing our effort as a way to increase our impact fails to scale. Tools are the multipliers that allow us to scale our im- pact beyond the confines of the work day.
+- If we have to do something manually more than twice, then it is better to write a tool for the third time. There are only a finite number of work hours in the day, so increasing our effort as a way to increase our impact fails to scale. Tools are the multipliers that allow us to scale our impact beyond the confines of the work day.
 - Improve internal development tools.
 
 ### Shorten Your Debugging and Validation Loops
@@ -82,15 +82,15 @@ Mastery is a process, not an event, and as you get more comfortable, the time sa
 - Prefer the keyboard over the mouse.
 - Automate your manual workflows.
 - Test out ideas on an interactive interpreter. For example in iOS development test your logical code in Playground or Console app before tesing it in app environment.
-- Make it fast and easy to run just the unit tests associated with your cur- rent changes.
+- Make it fast and easy to run just the unit tests associated with your current changes.
 
 
 ### Don’t Ignore Your Non-Engineering Bottlenecks
 
 Non-engineering constraints may also hinder your iteration speed. 
 - One common type of bottleneck is dependency on other people. A product manager might be slow at gathering the customer requirements that you need; a designer might not be providing the Photoshop mocks for a key workflow; another engineering team might not have delivered a promised feature, thus blocking your own development.
-	- Communication is critical for making progress on people-related bottlenecks. Ask for updates and commitments from team members at meetings or daily stand-ups. Periodically check in with that product manager to make sure what you need hasn’t gotten dropped. Follow up with written communica- tion (email or meeting notes) on key action items and dates that were decided in-person.
-	- Don’t wait until after you’ve invested massive amounts of engineering time to seek final project ap- proval. Instead, prioritize building prototypes, collecting early data, conducting user studies, or whatever else is necessary to get preliminary project approval.
+	- Communication is critical for making progress on people-related bottlenecks. Ask for updates and commitments from team members at meetings or daily stand-ups. Periodically check in with that product manager to make sure what you need hasn’t gotten dropped. Follow up with written communication (email or meeting notes) on key action items and dates that were decided in-person.
+	- Don’t wait until after you’ve invested massive amounts of engineering time to seek final project approval. Instead, prioritize building prototypes, collecting early data, conducting user studies, or whatever else is necessary to get preliminary project approval.
 
 
 ## Chapter 5: Measure What You Want to Improve
@@ -118,10 +118,10 @@ It’s crucial to remember that the choice of which metric to measure dramatical
 An examples of how tracking different metrics can affect team behavior:
 
 - **Hours worked per week vs. productivity per week**
-	- The writer observed during his early job life, attempting to increase output by increasing hours worked per week is unsus- tainable. It is much more reasonable to align your metric with productivity per week, where productivity in your focus area is measured by factors like product quality, site speed, or user growth.
+	- The writer observed during his early job life, attempting to increase output by increasing hours worked per week is unsustainable. It is much more reasonable to align your metric with productivity per week, where productivity in your focus area is measured by factors like product quality, site speed, or user growth.
 
 #### Instrument Everything to Understand What’s Going On
-- The principle of "Instrument Everything to Understand What’s Going On" advocates for comprehensive data collection through instrumentation. By collecting diverse and granular data, teams gain insights into system performance, user behavior, and areas needing improvement. Instrumentation forms the foundation for data-driven decision-making and continuous improvement, fostering a deeper understanding of complex systems and processes. For example: when it comes to diagnosing problems, instrumentation is critical. Suppose there’s a spike in the number of user login errors. Was a new bug introduced? Did the authenti- cation backend hit a network glitch? Was a malicious user programmatical- ly guessing passwords? Was it something else entirely? To effectively answer these questions, we need to know when the errors started, the time of the latest code deployment, the network traffic of the authentication service, the maxi- mum number of authentication attempts per account over various time win- dows, and possibly more pieces of information. Without these metrics, we’re left guessing—and we might end up wasting effort addressing non-problematic areas.
+- The principle of "Instrument Everything to Understand What’s Going On" advocates for comprehensive data collection through instrumentation. By collecting diverse and granular data, teams gain insights into system performance, user behavior, and areas needing improvement. Instrumentation forms the foundation for data-driven decision-making and continuous improvement, fostering a deeper understanding of complex systems and processes. For example: when it comes to diagnosing problems, instrumentation is critical. Suppose there’s a spike in the number of user login errors. Was a new bug introduced? Did the authentication backend hit a network glitch? Was a malicious user programmatically guessing passwords? Was it something else entirely? To effectively answer these questions, we need to know when the errors started, the time of the latest code deployment, the network traffic of the authentication service, the maximum number of authentication attempts per account over various time windows, and possibly more pieces of information. Without these metrics, we’re left guessing—and we might end up wasting effort addressing non-problematic areas.
 - Adopting a mindset of instrumentation means ensuring we have a set of dashboards that surface key health metrics and that enable us to drill down to the relevant data. However, many of the questions we want to answer tend to be exploratory, since we often don’t know everything that we want to measure ahead of time. Therefore, we need to build flexible tools and abstractions that make it easy to track additional metrics.
 
 #### Internalize Useful Numbers
@@ -175,7 +175,7 @@ Project estimation is one of the hardest skills that an effective engineer needs
 ### How to Improve
 
 #### Decompose the project into granular tasks
-When estimating a large pro- ject, decompose it into small tasks and estimate each one of them. If a task will take more than two days, decompose it further. The more granular a task’s breakdown, the less likely that an uncon- sidered subtask will sneak up later.
+When estimating a large project, decompose it into small tasks and estimate each one of them. If a task will take more than two days, decompose it further. The more granular a task’s breakdown, the less likely that an unconsidered subtask will sneak up later.
 
 
 #### Base your estimates on task duration, not desired duration
@@ -183,15 +183,15 @@ Estimate based on how long tasks will take, not on how long you or someone else 
 
 
 #### Estimates are likelihoods, not best-case views
-Because we operate with imperfect information, we instead should consider our esti- mates as probability distributions over a range of outcomes, spanning the best-case and worst-case scenarios. Instead of telling a product manager or other stakeholder that we’ll finish a feature in 6 weeks, we might instead tell them, “There’s a 50% likelihood that we can deliver the feature 4 weeks from now, and a 90% chance that we can deliver it within 8 weeks.”
+Because we operate with imperfect information, we instead should consider our estimates as probability distributions over a range of outcomes, spanning the best-case and worst-case scenarios. Instead of telling a product manager or other stakeholder that we’ll finish a feature in 6 weeks, we might instead tell them, “There’s a 50% likelihood that we can deliver the feature 4 weeks from now, and a 90% chance that we can deliver it within 8 weeks.”
 
 
 #### Task doer makes the estimate
-People have different skill sets and levels of familiarity with the codebase. Therefore, what takes you one hour to complete might take someone else three hours. As much as possible, have the person who will work on a task do the actual estimation. Divvying up the estimation work also enables more team members to practice estimation skills and builds team-wide visibility into how different members over- or underestimate their work (most people underestimate).
+People have different skill sets and levels of familiarity with the codebase. Therefore, what takes you one hour to complete might take someone else three hours. As much as possible, have the person who will work on a task do the actual estimation. Divvying up the estimation work also enables more team members to practice estimation skills and builds team-wide visibility into how different members over or underestimate their work (most people underestimate).
 
 
 #### Beware of anchoring bias
-Avoid committing to an initial number before ac- tually outlining the tasks involved, as a low estimate can set an initial anchor that makes it hard to establish a more accurate estimate later on.
+Avoid committing to an initial number before actually outlining the tasks involved, as a low estimate can set an initial anchor that makes it hard to establish a more accurate estimate later on.
 
 
 #### Use multiple approaches to estimate the same task
@@ -199,7 +199,7 @@ This can help increase confidence that your approach is sound. For example, supp
 
 
 #### Beware the mythical man-month
-In engineering, project durations typ- ically get measured in terms of person-hours, person-days, person-weeks, or person-months i.e. the number of hours, days, weeks, or months of work that it takes an average engineer to complete a project. Unfortunately, this type of accounting leads to the myth that people and time are in- terchangeable.
+In engineering, project durations typically get measured in terms of person-hours, person-days, person-weeks, or person-months i.e. the number of hours, days, weeks, or months of work that it takes an average engineer to complete a project. Unfortunately, this type of accounting leads to the myth that people and time are interchangeable.
 
 
 #### Validate estimates against historical data
@@ -220,11 +220,38 @@ We can better deal with unknowns by acknowledging that the longer a project is, 
 
 
 #### Define Specific Project Goals and Measurable Milestones
-Define specific goals for a project based on the problem you’re working to solve, and then use milestones to measure progress on those goals. The simple exercise of setting a project goal produces two concrete benefits. First, a well-defined goal provides an important filter for separating the must haves from the nice-to-haves in the task list. The second benefit of defining specific project goals is that it builds clarity and alignment across key stakeholders. If we’ve fallen behind, a milestone provides an opportunity to revise our plan, ei- ther by extending the deadline or by cutting tasks.
+Define specific goals for a project based on the problem you’re working to solve, and then use milestones to measure progress on those goals. The simple exercise of setting a project goal produces two concrete benefits. First, a well-defined goal provides an important filter for separating the must haves from the nice-to-haves in the task list. The second benefit of defining specific project goals is that it builds clarity and alignment across key stakeholders. If we’ve fallen behind, a milestone provides an opportunity to revise our plan, either by extending the deadline or by cutting tasks.
 
 #### Reduce Risk Early
-Tackling the riskiest areas first helps us identify any estimation errors as- sociated with them. Our initial project estimates will exhibit high variance because we’re oper- ating under uncertainty and imperfect information. As we gain more informa- tion and revise our estimates, the variance narrows. By shifting the work that can take highly variable amounts of time to earlier in the process, we reduce risk and give ourselves more time and information to make effective project plans.
+Tackling the riskiest areas first helps us identify any estimation errors associated with them. Our initial project estimates will exhibit high variance because we’re operating under uncertainty and imperfect information. As we gain more information and revise our estimates, the variance narrows. By shifting the work that can take highly variable amounts of time to earlier in the process, we reduce risk and give ourselves more time and information to make effective project plans.
 
 
 #### Know the limits of overtime
 Many teams burn out because they start sprinting before they’re even close to the finish line. Don’t sprint just because you’re behind and don’t know what else to do. Work overtime only if you’re confident that it will enable you to finish on time.
+
+
+## Chapter 8: Balance Quality with Pragmatism
+
+### Why
+Striking a balance between quality and pragmatism is essential. While high-quality solutions are desirable, aiming for perfection in every aspect can lead to inefficiencies, delays, and over-engineering. Embracing pragmatism ensures timely delivery and resource optimization without compromising essential quality standards.
+
+### How to Balance
+
+#### Establish a Sustainable Code Review Process
+Code reviews facilitate positive modeling of good coding practices. There’s a tradeoff between the additional quality that code reviews can provide and the shortterm productivity win from spending that time to add value in other ways. Find the right balance between code reviews and tooling to trade off code quality and development speed.
+
+
+#### Manage Complexity through Abstraction
+Invest in good software abstractions to simplify difficult problems. Good abstractions solve a hard problem once and for all, and significantly increase the productivity of those who use it. But if you try to build abstractions when you have incomplete information about use cases, you’ll end up with something clunky and unusable.
+
+#### Automate Testing
+Automated testing doesn’t just reduce bugs; it provides other benefits as well. The most immediate payoff comes from decreasing repetitive work that we’d otherwise need to do by hand. Rather than manually triggering variations from different code branches, we can programmatically and quickly run through large numbers of branches to verify correctness. Moreover, the more closely the tests mirror actual conditions in a production environment and the easier it is for engineers to run those tests, the more likely it is that engineers will incorporate testing into their development workflow to automate checks. A suite of unit and integration tests can help alleviate the fear of modifying what might otherwise be brittle code. Focus on ones that save the most time first.
+
+
+#### Repay Technical Debt
+If you spend all your resources paying off interest on your debt, you won’t have enough time left to work on new things. Focus on the debt that incurs the most interest. By doing so, teams can prevent compounding issues, improve system reliability, and maintain agility in future developments. Repaying technical debt is crucial for sustained productivity, reduced maintenance costs, and long-term project success.
+
+
+
+
+
