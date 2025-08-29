@@ -463,12 +463,454 @@ Different charts are suited for visualizing different kinds of data.
 - Flowcharts: Best for showing the stages and sequence of a process, using symbols and arrows to illustrate the flow.
 
 
+## Requirements
+
+### Poor Requirements = Project Failure
+
+- As of 2015, only 29% of software projects were considered successful (on time, on budget, and with satisfactory results). The report consistently lists reasons related to requirements as top causes for project failure, including:
+	- Incomplete requirements
+	- Changing requirements
+
+- Lists "badly defined system requirements" as a top-three reason why projects fail.
+
+
+### Good Requirements = Much Better Chance!
+
+This summary outlines the characteristics of a "good" requirement. The fundamental purpose of a requirement is to translate a user's need, expressed in plain English, into a clear instruction that a developer can use to write code. ✅
+
+#### Nine Characteristics of a Good Requirement
+A well-written requirement should have the following nine attributes:
+
+- Unitary: It addresses one single thing. For example, user registration and login should be two separate requirements.
+- Complete: All necessary information is included in one place.
+- Consistent: It does not contradict any other requirement or document.
+- Atomic: It does not contain conjunctions like "and." For instance, "Validate fields A and B" should be broken into two separate requirements.
+- Traceable: It can be traced back to a specific business need from a stakeholder.
+- Current: It is up-to-date and not obsolete, which requires frequent review.
+- Unambiguous: It can only be interpreted in one way and avoids jargon.
+- Specifies Importance: It has a defined priority level (e.g., high, medium, low).
+- Verifiable: It can be tested after implementation to prove that it has been met.
 
 
 
 
+#### Two Perspectives for Writing Requirements
+Requirements can be written from two main points of view:
+
+- User's Perspective: This focuses on what a user can do. It is ideal for user-facing features.
+	- Template: "[User/Actor] shall be able to [do something]..."
+	- Example: "The pharmacist shall be able to send an opt-in notification to the patient..."
+- System's Perspective: This focuses on what the system does automatically, often in the background. It is ideal for back-end processes.
+	- Template: "When [a condition occurs], the system shall [do something]..."
+	- Example: "When a new notification is saved..., the system shall send an SMS message..."
+
+
+### Requirement Writing Styles
+#### Three Styles of Requirements
+There is no single "right" way to write requirements; the style you choose should match the level of detail your project needs. The three common styles, ranging from low to high detail, are:
+
+- User Stories: Low detail and specification, very common on Agile projects.
+- Traditional/Text-Based Requirements: A more traditional, medium-detail approach.
+- Use Cases: The highest level of detail and specification.
+
+
+#### Writing Tips: Dos and Don'ts
+Regardless of the style you choose, follow these best practices for clear and effective requirements.
+
+##### 👍 DO:
+- Use terms consistently: If you call something a "notification," don't refer to it as an "alert" elsewhere.
+- Define terms in a glossary: Help everyone on the team understand specific terms and acronyms.
+- Use an active voice: It is clearer and less ambiguous than a passive voice.
+- Be precise with boundary values: Be specific about terms like "less than" versus "less than or equal to."
+- Avoid negation: State what the system should do, not what it shouldn't. For example, say "Only valid users can log in," not "Users without an account cannot log in."
+
+##### 👎 DON'T:
+- Don't design the system: Avoid specifying UI elements (like buttons or dropdowns) or technical details. Focus on what needs to be done, not how.
+- Don't use vague terms: Avoid subjective words like "user-friendly" or "efficient." Use terms that can be quantified and measured.
+- Don't speculate: Do not use words like "usually," "often," or "probably." Requirements must be definite.
+- Don't ramble: Be concise and to the point.
+
+
+### User Stories
+
+#### The User Story Format
+User stories typically follow a simple template:
+"As a [type of user], I want [some goal] so that [some reason]."
+
+Example: "As a patient, I want to receive an SMS message when my prescription is ready so that I can avoid unnecessary waiting at the pharmacy."
+
+
+## Acceptance Criteria
+To address the limitations of user stories (like vagueness), they are paired with acceptance criteria. These are a set of specific, defined requirements that must be met for the story to be considered complete. They provide the necessary detail for developers to build the feature correctly and for testers to verify it.
+
+Example: For a story about a pharmacist enrolling a patient, acceptance criteria might include "All required fields must be completed before submitting" and "The form information is stored in the enrollment database."
 
 
 
+### Traditional (Text-based) Requirements
+
+#### The Format
+These requirements generally follow a set structure:
+[Subject] + [Auxiliary Verb] + [Capability/Functionality] + (Optional Clarification)
+
+- Example: "The company (Subject) shall (Auxiliary Verb) develop an SMS notification system (Capability)."
+
+While this format provides more completeness than a user story, it may still lack enough detail for direct implementation by developers.
+
+#### The Meaning of Auxiliary Verbs
+In formal requirements, the choice of verb is critical, as each one has a specific meaning (often based on standards like those from IEEE).
+
+- Shall: Indicates a mandatory requirement. It is something that is required.
+- Should: Implies a recommendation or a preferred option among several possibilities.
+- May: Means an action is permissible or allowed.
+- Can: Refers to a capability or possibility (the system is able to do something).
+- Must: Is used only to describe an unavoidable situation.
+- Will: Is a statement of fact, not a mandatory requirement.
+
+
+### Use Cases
+
+#### The Structure of a Use Case
+A written use case is highly structured and contains many specific fields to ensure no detail is missed. Key components include:
+- A unique ID, title, and description.
+- The actors involved (e.g., patient, pharmacist).
+- Preconditions (what must be true before the process starts).
+- Postconditions (the state of the system after the process ends).
+- A Main Success Scenario, which is a step-by-step walkthrough of the ideal "happy path."
+- Extensions, which describe alternative flows and error conditions.
+
+#### Visual Modeling with UML
+Use cases are often associated with the Unified Modeling Language (UML) and typically start as visual diagrams before being written out in detail. These diagrams use:
+
+- Actors: Stick figures representing users or external systems.
+- Use Cases: Ovals or "bubbles" representing a specific goal or action.
+- Relationships: Lines and arrows that define how actors and use cases interact. Key relationships include:
+	- Association: A simple line showing an actor can interact with a use case.
+	- Include: Indicates that one use case's functionality is mandatory for another.
+	- Extend: Indicates that one use case adds optional functionality to another.
+
+
+### Types of Requirements
+
+#### The Five Types of Requirements
+**Business Requirements**
+
+- What they are: High-level (30,000-foot view) goals that describe what the system will accomplish for the business, without going into detail about how.
+- Recommended Style: Traditional/Text-Based.
+- (Example: "Provide an SMS notification system for Pharmalantis' customers.")
+
+**User or Stakeholder Requirements**
+
+- What they are: Descriptions of what a user or stakeholder needs to accomplish, written from their perspective.
+- Recommended Styles: Traditional or User Story.
+- (Example: "As a patient, I want to receive an SMS message when my prescription is ready...")
+
+**Functional Requirements**
+
+- What they are: Specific functions of the system, including its behaviors, inputs, and outputs.
+- Recommended Styles: User Story or Use Case. Use cases are particularly useful here as they translate well into test cases.
+
+**Non-Functional Requirements**
+
+- What they are: The quality attributes and operating conditions of the system, such as performance, security, or usability. They define how well the system works.
+- Recommended Styles: Any of the three styles can be used.
+- (Example: "The system shall display all system pages within 3 seconds...")
+
+**Interface Requirements**
+
+- What they are: Descriptions of how the system interacts with other systems (hardware or software) or with users (the user interface).
+- Recommended Styles: Traditional or Use Case. For user interface requirements, you can also include wireframes, mockups, or a style guide.
+
+
+### Software Requirements Specification (SRS)
+
+#### Goals of an SRS
+The SRS is a critical document that serves several key purposes:
+
+- Facilitates Reviews: It provides a concrete document for stakeholders and team members to review and ensure everyone is aligned.
+- Defines Scope: It clearly outlines the boundaries of the project.
+- Guides Development and Testing: It serves as a reference for designers and provides a framework for testers.
+- Ensures Traceability: It links every feature back to a specific customer requirement.
+- Allows for Refinement: It's a living document that can be updated as the project evolves.
+
+
+#### The Structure of an SRS
+While formats can vary, a comprehensive SRS (based on the IEEE template) typically includes the following sections:
+
+**Front Matter:**
+
+- Table of Contents: For easy navigation in a large document.
+- Revision History: To track all changes (who, what, and when).
+
+**Introduction:**
+
+Includes the document's purpose, intended audience, project scope, and references to other materials.
+
+**Overall Description:**
+
+Covers the product perspective (how it fits with other systems), user classes, operating environment, design constraints, assumptions, and dependencies.
+
+**Specific Requirements:**
+
+- External Interface Requirements: Details on the user interface (including mockups), hardware, software, and communication interfaces.
+- Functional Requirements: The core of the document, describing the system's specific behaviors, inputs, and outputs.
+- Non-Functional Requirements: Defines quality attributes like performance, security, and safety.
+- Other Requirements: Any requirements not covered elsewhere, such as database or legal needs.
+
+**Glossary:**
+
+A section at the end to define key terms and acronyms used throughout the document.
+
+## Design/Architecture Documentation
+
+### Software Design Document (SDD)
+
+#### Why Create an SDD?
+The SDD is a valuable artifact that serves several key purposes for different audiences:
+
+- For Managers and Stakeholders: It establishes clear design goals, creates a common terminology for the project, and helps project managers estimate time and resources.
+- For Developers: It communicates the overall design, allows team members to validate their approaches, helps onboard new developers, and serves as a historical reference for future maintenance or follow-on projects.
+- For Auditing: It provides a single, comprehensive document for any regulatory reviews.
+
+
+#### The SDD in an Agile Context
+On Agile projects, where extensive documentation is often avoided, a full-blown SDD might seem counterintuitive. In these cases, the focus of the design document should be to:
+
+- Document decisions that are not obvious or had reasonable alternatives.
+- Record information about approaches that were explored but ultimately did not work out.
+
+
+
+### Introduction
+
+A comprehensive introduction typically contains the following sub-sections:
+
+- Purpose: A brief statement explaining what the SDD is for.
+- (Example: "This document defines the design of the Pharmalantalert system...")
+- Scope: Identifies the product or products to be developed. This section can also describe the system's benefits, objectives, and any associated risks. (Example: "Pharmalantalert consists of two major sub-systems: a web application... and a mobile app...")
+- Intended Audience: Clearly states who the document is written for, which is typically the software development team (developers, project managers) but may also include stakeholders.
+- Design Goals and Rationale: This is a critical section that explains the "why" behind major architectural decisions. It's the place to justify your chosen approach (e.g., why you selected an MVC model) and to list key context, including:
+	- Assumptions
+	- Dependencies (e.g., reliance on a third-party API)
+	- Constraints (e.g., the system must run on Windows 7)
+
+
+### System Architecture
+#### Purpose and Level of Detail
+This section should describe the system's major components and, most importantly, how they work together. It's meant to communicate a general understanding of the overall structure and the reasons behind it.
+
+Crucially, you should avoid going into detail about the inner workings of individual components here. Those specifics are saved for the "Detailed System Design" section, which comes later.
+
+#### The Role of Diagrams
+The System Architecture section is the perfect place to use visuals to illustrate the design. Appropriate diagrams include:
+
+- High-level architecture diagrams: An abstract view showing the main architectural pattern (e.g., a three-tiered architecture) and its major sub-components.
+- Component communication diagrams: A visual representation of how the major parts of the system communicate with each other.
+- High-level use case diagrams: The simple "stick figures and bubbles" diagram that shows the system's main functions from a user's perspective.
+
+
+### Detailed System Design
+
+#### Purpose and Level of Detail
+The goal of this section is to describe the functionality, responsibilities, inputs, outputs, and constraints of each individual component of the system. If necessary, components can be broken down further into subcomponents, which are also described in detail.
+
+This is the place to document technical specifics, such as:
+
+- Design patterns and techniques being used.
+- Details for specific modules, classes, and files.
+- Explanations of any non-trivial algorithms or data structures.
+- Definitions of any interfaces that components will expose.
+
+#### The Role of Diagrams
+Detailed diagrams are essential for this section. The two most useful types are:
+
+- Class Diagrams: To visually represent the system's classes and the static relationships between them.
+- Sequence Diagrams: To show how different components interact with each other over time to complete a specific function.
+
+### Data Design
+This section should include details on:
+
+- The type of data that will be stored.
+- The database schema, including a complete list of tables and their columns.
+- Operational considerations such as the estimated size of the database, the frequency of updates, and any plans for security and recovery.
+
+### User Interface
+
+This section should include:
+
+- Wireframes or Mockups: These are visual blueprints of the UI that give a sense of the look and feel. Even rough sketches are hugely helpful as a starting point for developers.
+- Controls and Behaviors: A description of how UI elements like buttons, dropdowns, and menus will function.
+- Supported Dimensions: Details on how the UI will adapt to different screen sizes and orientations (e.g., laptop, tablet, phone).
+
+
+
+## Code Documentation
+
+
+#### When NOT to Use Comments
+Good code should be self-documenting. Therefore, you should avoid using comments for the following:
+
+- To state the obvious: Do not add comments that simply repeat what the code clearly says.
+	- Example: A method named UpdatePatientAddress does not need a comment saying "This method updates the patient's address."
+- To explain bad code: If code is confusing, the solution is not to add a comment explaining it. The solution is to refactor the code to make it clearer.
+	- Example: Instead of using a comment to explain a "magic number" (like if status == 4), use a named constant or an enum (if status == Status.Failed).
+- To "delete" or save old code: Do not comment out old code "just in case" or to temporarily disable it. This is what source control is for. Commented-out code just adds clutter and confusion.
+
+
+
+#### When You SHOULD Use Comments
+Comments are valuable when they provide context that the code itself cannot.
+
+- For high-level summaries: A comment at the top of a class or a complex module that explains its overall purpose or the "why" behind its design can be very helpful. These are less likely to become outdated than line-by-line comments.
+- To mark tasks for the future: Use special flags to create trackable notes for yourself and your team.
+	- TODO: Marks something that is incomplete and needs to be done.
+	- HACK: Signals a temporary workaround or a piece of code that is not ideal and needs to be improved later.
+	- UNDONE: Indicates a section where code still needs to be written.
+
+
+### API Documentation
+
+#### The Audience for API Documentation
+Like any documentation, you must write for your audience. For APIs, this typically includes three groups:
+
+- New Developers: First-time users who need clear "getting started" guides and tutorials.
+- Experienced Developers: Returning users who are likely looking for specific details in the reference documentation to debug an issue.
+- Evaluators: Business people or developers who are simply reviewing the API's capabilities to see if it meets their needs.
+
+#### What to Include in Your API Documentation
+To serve these different audiences, comprehensive API documentation should include several key components:
+
+- Reference Documentation: This is the core "dictionary" of the API, providing a detailed description of every function, parameter, and object.
+- Overview and Concepts: A high-level narrative that explains how the different parts of the API work together.
+- Tutorials and Training: Step-by-step guides for common tasks, complete with copy-and-paste code snippets.
+- Getting Started Guide: Instructions for installation, authentication, and basic setup, which is crucial for new users.
+- SDK Documentation: If you provide a Software Development Kit (SDK), you must document how to install and use it.
+- License Information: The legal terms and conditions for using the API.
+
+
+### README Files
+
+#### What a Good README Looks Like
+A bad README is incomplete or confusing, leading to user frustration. A good README is the opposite—it's complete, concise, and helps the user become productive right away.
+
+##### Must-Haves
+Every README file should include these essential pieces of information:
+
+- Date: The release date of the software.
+- Name and Version Number: Crucial for tracking different releases.
+- Short Description: A simple, layman's terms explanation of what the software does.
+- Installation Instructions: Step-by-step instructions, including any prerequisites or dependencies.
+- Copyright and Licensing Information: The legal terms for using the software.
+- Contact Information: How to get help or report issues.
+
+
+##### Optional (but Recommended)
+For a more comprehensive README, consider including these sections:
+
+- File Manifest: A list of all files included in the package.
+- Configuration/Operating Instructions: How to configure and run the software after installation.
+- Known Bugs: Being transparent about known issues helps users make informed decisions.
+- Troubleshooting: A guide to common problems and their solutions.
+- Credits: Acknowledgment of team members or third-party vendors.
+- Change Log: A developer-focused list of what has changed in the current release.
+
+## Test Plans and Test Cases
+### Test Strategy
+This section details the strategic thinking behind the testing process.
+
+- Test Objectives: Explains what will be tested and why, and defines the types of testing to be performed (e.g., integration, user acceptance).
+- Assumptions and Principles: Lists any assumptions that must be true for testing to succeed and the foundational rules that will guide the testing process.
+- Scope and Effort: Provides more detail on the different levels of testing, along with an estimation of the effort (in hours) and resources required.
+
+### Execution Strategy
+This part of the document describes the tactical plan for how tests will actually be run.
+
+- Entry and Exit Criteria: Defines the specific conditions that must be met to start testing (entry) and to consider a testing phase complete (exit). An example of exit criteria is achieving a 95% pass rate.
+- Test Cycles: Outlines how testing will be broken down into phases or cycles.
+- Defect Management: A critical component that describes the entire process for handling bugs, including how they will be labeled (e.g., critical, high, low), the tools used for tracking (e.g., JIRA), and the roles and responsibilities for managing them.
+
+### Test Management Process
+This section covers the logistical aspects of managing the testing effort.
+
+- Tools and Processes: Details the tools used for managing tests (e.g., TFS, Excel) and the formal process for executing them.
+- Risks and Communications: Identifies potential risks (e.g., resource shortages) and establishes a clear communications plan for the team (meetings, status reports, etc.).
+- Roles and Contacts: Lists all the key roles on the project and the contact information for the people filling them.
+
+### Test Environment
+The final section provides the technical details testers need to get started. It specifies the location of the software to be tested (e.g., a URL), any required permissions, and the necessary hardware or software for the testers' machines.
+
+
+## Writing Test Cases
+### Characteristics of a Good Test Case
+A well-written test case should be:
+
+- Executable by Anyone: It shouldn't require special or unwritten knowledge. All steps and required setup are clearly documented.
+- Detailed: It includes all necessary steps from beginning to end.
+- Descriptive: It has a strong, clear title that instantly explains what is being tested.
+- Consistent: It follows the same naming conventions as other project documents.
+- Easy to Understand: The language is simple and legible.
+- Reusable: It is modular and can be called upon by other, larger test cases (e.g., a "Login" test case can be a prerequisite for a "Change Profile" test case).
+
+### The Format of a Test Case
+A typical test case document is structured with the following fields:
+
+- Test Case ID: A unique identifier (e.g., TC-3.3.1).
+- Title: A descriptive name for the test.
+- Related Requirement: A reference back to the specific requirement being tested, which ensures traceability.
+- Preconditions: A list of conditions that must be true before the test can begin.
+- Test Steps: The exact, step-by-step instructions for the tester to follow.
+- Expected Result: What should happen if the software is working correctly.
+- Actual Result: What actually happened when the test was performed.
+- Pass/Fail: The final status based on whether the actual result matched the expected result.
+- Notes: Any additional comments or observations.
+
+
+## End-user Documentation
+
+### User Guides
+#### The Audience
+Unlike internal documents like requirements or test plans, the user guide is written for the widest possible audience. It goes out to the masses, who will have a vast range of technical skills and backgrounds, from tech-savvy experts to complete beginners.
+
+#### Key Questions a User Guide Must Answer
+Because of this diverse audience, a good user guide must anticipate and answer the fundamental questions every new user will have:
+
+- What does it do? (The system's core purpose)
+- What are the major features? (Its key capabilities)
+- Why should I use it? (The value it provides)
+- How do I use it? (The step-by-step instructions)
+- How does it fit with other systems? (Its context and integration)
+
+
+### Quick Reference Guides
+
+#### Purpose and Content
+A quick reference guide can serve two main purposes:
+
+- Getting Started: It can provide the key steps a new user needs to begin using the software, such as how to create an account, log in, and perform a core task.
+- Specific Processes: It can focus on a single, specific workflow, often using a flowchart to illustrate the end-to-end process.
+
+#### Design Best Practices
+The key to a good quick reference guide is to be highly visual and avoid long paragraphs or "walls of text." Instead of text, you should use elements like:
+
+- Diagrams and flowcharts to illustrate processes.
+- Reference tables for easy data lookup (e.g., a list of codes).
+- Numbered or bulleted lists for step-by-step instructions.
+- Graphics and infographics to convey information visually.
+
+
+## Release Notes
+
+### The Audience
+Release notes are typically written for two main groups:
+
+- Existing Users: People who are already using a previous version of the software.
+- Sales and Marketing Teams: The internal teams responsible for promoting and selling the new version.
+
+### Key Information in Release Notes
+The content of release notes is designed to answer specific questions for this audience:
+
+- Benefits of Upgrading: They explain why an existing user should make the switch to the new version.
+- Bug Fixes: They provide a list of bugs from the previous version that have been fixed, which is a key consideration for users.
+- New Features: They highlight all the new capabilities and improvements, giving the Sales and Marketing teams the information they need to promote the product.
 
 
