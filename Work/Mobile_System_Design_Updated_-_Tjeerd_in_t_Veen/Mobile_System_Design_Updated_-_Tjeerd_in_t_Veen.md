@@ -118,8 +118,18 @@ serve all teams, multiple targets, platforms, and domains.
 - Avoid starting with fancy drop shadows and animations. You can defer architecture discussions until much later. You should begin by drawing a diagram
 
 
+
+
+![Alt Text](resources/dependency_graph.png)
+
+
+![Alt Text](resources/feature_to_implement.png)
+
+
 ## NOTES
 
 - During System Design interviews, you can’t go back and forth with a designer. But you can communicate the unknown details and missing information. This shows the interviewers that you’re understanding the problem on a deeper level, and are considering edge-cases.
 
 - During a job interview, it’s important to show all the missing details that you’re thinking of. It’s a way to impress interviewers by showing you think of a lot of non-obvious parts and secondary requirements.
+
+- if you have trouble getting your code to compile during an interview, then say it’ s “intentional” so you can focus on more important parts.

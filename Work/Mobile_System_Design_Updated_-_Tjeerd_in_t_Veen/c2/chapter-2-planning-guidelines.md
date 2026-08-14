@@ -4,16 +4,16 @@ This guide outlines key practices for mobile engineers when translating feature 
 
 ## Should Do
 
-*   **Try to understand the problem better before you start coding.** Ask questions to uncover hidden requirements. This step prevents major rewrites later. [42]
-*   **Sketch a technical landscape diagram early in the planning phase.** Map out all required components and domains as nodes. Let your architecture grow organically over time. [36, 42]
-*   **Align early with backend developers on critical systems.** Discuss session tokens, timeouts, and error codes. Propose consolidating multiple API calls into one. [81, 83, 85]
-*   **Ask the designer for a worst-case scenario layout.** Real-world data is often ugly and missing. Ensure the design holds with poor content. [60]
-*   **Identify pre-existing components before writing new code.** Talk to other mobile engineers on your team. Reusing existing views saves a lot of time. [64, 65]
+*   **Understand the problem deeply before you start writing any code.** Uncover hidden requirements early to prevent costly rewrites later. For example, ask if recurring tasks reset daily or weekly. [42]
+*   **Sketch a technical landscape diagram early in your planning.** Map out all required components and domains as nodes. For example, mark unresolved dependencies with dashed outlines. [36, 42]
+*   **Align early with backend developers on critical system integrations.** For example, discuss session timeouts and local login token retrieval. Also, negotiate consolidated network calls to support multiple platforms. [81, 83, 85]
+*   **Request a worst-case scenario layout with poor content early on.** Verify how the screen holds up with very ugly data. For example, support extremely long labels and right-to-left text. [60]
+*   **Identify pre-existing codebase components before writing any new code.** Ask your team if shared UI primitives are already available. For example, reuse an existing generic thumbnail and description view. [64, 65]
 
 ## Should Not Do
 
-*   **Do not start coding the UI right away.** This approach localizes your thinking too much. You might miss massive backend integration issues. [30, 31]
-*   **Do not get bogged down in minor details.** Focus on high-level structures in the beginning. Defer styling and animations until much later. [40, 41]
-*   **Avoid choosing a rigid UI architecture immediately.** Let your architecture evolve as you learn. A single pattern cannot solve every problem. [37, 39]
-*   **Do not accept a design as absolute law.** Designs are tools used for team communication. Challenge assumptions to find critical edge cases. [58, 61]
-*   **Do not give binary answers to difficult design requests.** Discuss tradeoffs in terms of time investments. Frame estimates as weeks of extra work. [73, 74]
+*   **Do not begin implementation by coding the UI right away.** Starting with visuals causes you to think too locally. For example, you might overlook critical backend authentication timeouts. [30, 31]
+*   **Do not get bogged down in minor details.** Focus your energy on high-level system structures first. For example, defer adding custom drop shadows and animations. [40, 41]
+*   **Avoid choosing a specific UI architecture too early.** Do not let a rigid pattern lock your app down. For example, do not force reactive programming onto simple screens. [37, 39]
+*   **Do not accept a high-fidelity design as absolute law.** Use designs as communication tools to collaborate with your team. For example, challenge assumptions about a missing tablet layout. [58, 61]
+*   **Avoid giving simple binary answers to difficult design requests.** Discuss consequences and alternatives in terms of time investments. For example, quantify a custom navigation bar as extra weeks. [73, 74]
